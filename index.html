@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Retro Tetris — a browser-based falling-block puzzle game inspired by 1990s arcade aesthetics.">
+  <title>RETRO TETRIS // 1990</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="crt">
+    <header><div class="brand">RETRO<span>TETRIS</span></div><div class="status">INSERT COIN <b>◆</b></div></header>
+    <main class="arcade">
+      <aside class="panel left-panel"><div class="label">NEXT</div><div id="next" class="mini-board"></div><div class="stat"><span>SCORE</span><strong id="score">000000</strong></div><div class="stat"><span>LEVEL</span><strong id="level">01</strong></div><div class="stat"><span>LINES</span><strong id="lines">000</strong></div></aside>
+      <section class="game-shell"><div class="screen-frame"><canvas id="game" width="300" height="600" aria-label="Tetris game"></canvas><div id="overlay" class="overlay"><div class="title">RETRO TETRIS</div><p>PRESS ENTER TO START</p><small>ARROWS / Z / SPACE</small></div></div><div class="controls"><span>← → MOVE</span><span>↑ ROTATE</span><span>↓ DROP</span><span>SPACE HARD DROP</span><span>Z BACK</span></div></section>
+      <aside class="panel right-panel"><div class="label">HIGH SCORE</div><div id="highscore" class="highscore">000000</div><div class="label">TOP 5</div><ol id="scores" class="scores"></ol><button id="mute" class="pixel-button">SOUND: ON</button><button id="restart" class="pixel-button">RESTART</button></aside>
+    </main>
+    <footer>© 2026 RETRO TETRIS · OPEN SOURCE · BUILT FOR THE WEB</footer>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
